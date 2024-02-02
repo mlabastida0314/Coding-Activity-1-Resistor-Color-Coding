@@ -1,30 +1,69 @@
 # main.py
-#This Python code is a script that utilizes the NominalResistorCalculator class from the Nominal_Resistance_Calculator module.
-#The script allows the user to input the color bands of a resistor and then calculates and prints the corresponding nominal resistance and tolerance.
 
-from Nominal_Resistance_Calculator import NominalResistorCalculator
-#This line imports the NominalResistorCalculator class from the Nominal_Resistance_Calculator .py file.
-#The assumption here is that the calculator class is defined in a .py file named Nominal_Resistance_Calculator
+from Resistor_Nominal_Resistance_Calculator import ResistorNominalResistanceCalculator
+from Resistor_Limit_Value_Calculator import ResistorLimitValueCalculator
 
-def main(): #This function serves as the main entry point for the code.
-    print("Nominal Resistance Color Coding Calculator")
+def get_colorband_input(num_colors):
+    colors = []
+    for i in range(num_colors):
+        color = input(f"Enter the {i + 1} color: ").lower()
+        colors.append(color)
+    return colors
 
-    color_band1 = input("Enter the first color: ").lower()
-    color_band2 = input("Enter the second color: ").lower()
-    #The script prompts the user to enter the colors of the resistor bands.
-    # The .lower() method is used to convert the input to lowercase, ensuring case-insensitivity.
-    multiplier_band3 = input("Enter the multiplier color: ").lower()
-    tolerance_band4 = input("Enter the tolerance color: ").lower()
+while True:
+    try:
+        print("Nominal Resistance Color Coding Calculator")
+        band = int(input("How many bands does the resistor have? (4 or 5 bands): "))
 
-    calculator = NominalResistorCalculator(color_band1, color_band2, multiplier_band3, tolerance_band4)
-    #An instance of the NominalResistorCalculator class is created with the provided color band inputs.
-    nominal_resistance, tolerance_value = calculator.calculate_nominal_resistance()
-    #The calculate_nominal_resistance() method is called on the calculator object, and the resulting nominal resistance and tolerance values are assigned to variables.
+        if band == 4:
+            print('4 band resistor')
+            color_band1 = input("Enter the first color band: ").lower()
+            color_band2 = input("Enter the second color band: ").lower()
+            color_band3 = input("Enter the multiplier color band: ").lower()
+            color_band4 = input("Enter the tolerance color band: ").lower()
 
-    print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
-    #The script then prints the calculated nominal resistance and tolerance values in a formatted string.
+            resistor_calculator = ResistorNominalResistanceCalculator(color_band1, color_band2, color_band3, color_band4)
+            result = resistor_calculator.calculate_nominal_resistance()
+            if result is not None:
+                nominal_resistance, tolerance_value = result
+                print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
+            else:
+                print("Error in calculating the nominal resistance.")
 
-if __name__ == "__main__":
-    main()
-    #The script checks if it is being run directly (not imported as a .py file).
-    #If so, it calls the main() function, initiating the execution of the script.
+            limit_value_calculator = ResistorLimitValueCalculator()
+            result = limit_value_calculator.calculate_limits(color_band1, color_band2, color_band3, color_band4)
+            min_limit_values, max_limit_values = result
+            print("Limit Values, Minimum and Maximum: {} Ω - {} Ω".format(min_limit_values, max_limit_values))
+
+        elif band == 5:
+            print('5 band resistor')
+            color_band1 = input("Enter the first color band: ").lower()
+            color_band2 = input("Enter the second color band: ").lower()
+            color_band3 = input("Enter the third color band: ").lower()
+            color_band4 = input("Enter the multiplier color band: ").lower()
+            color_band5 = input("Enter the tolerance color band: ").lower()
+
+            resistor_calculator = ResistorNominalResistanceCalculator(color_band1, color_band2, color_band3, color_band4, color_band5)
+            result = resistor_calculator.calculate_nominal_resistance()
+            if result is not None:
+                nominal_resistance, tolerance_value = result
+                print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
+
+            else:
+                print("Error in calculating the nominal resistance.")
+
+            limit_value_calculator = ResistorLimitValueCalculator()
+            result = limit_value_calculator.calculate_limits(color_band1, color_band2, color_band3, color_band4, color_band5)
+            min_limit_values, max_limit_values = result
+            print("Limit Values, Minimum and Maximum: {} Ω - {} Ω".format(min_limit_values, max_limit_values))
+
+        else:
+            print("Invalid number of bands.")
+
+    except ValueError as e:
+        print(e)
+
+    end = input("Do you want to continue? (yes/no): ").lower()
+    if end != 'yes':
+        print("This is the end of the code. Thank you.")
+        break
