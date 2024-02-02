@@ -1,4 +1,4 @@
-# Calculator for resistor's nominal resistance, tolerance, and limit value.
+# Calculator for resistor's nominal resistance.
 
 from Resistor_Color_Codes import color_codes, multipliers, tolerances
 
