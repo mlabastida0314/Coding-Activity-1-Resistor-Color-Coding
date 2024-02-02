@@ -1,4 +1,5 @@
-from Resistor_Color_Codes import tolerances
+#Resistor Limit Value Calculator
+
 from Resistor_Nominal_Resistance_Calculator import ResistorNominalResistanceCalculator
 
 class ResistorLimitValueCalculator:
