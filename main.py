@@ -48,7 +48,6 @@ while True:
             if result is not None:
                 nominal_resistance, tolerance_value = result
                 print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
-
             else:
                 print("Error: In calculating the nominal resistance.")
 
