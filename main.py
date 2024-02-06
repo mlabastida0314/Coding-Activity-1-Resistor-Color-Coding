@@ -3,13 +3,6 @@
 from Resistor_Nominal_Resistance_Calculator import ResistorNominalResistanceCalculator
 from Resistor_Limit_Value_Calculator import ResistorLimitValueCalculator
 
-def get_colorband_and_resistance_input(num_colors):
-    colors = []
-    for i in range(num_colors):
-        color = input(f"Enter the {i + 1} color: ").lower()
-        colors.append(color)
-    return colors
-
 while True:
     try:
         print("Nominal Resistance Color Coding Calculator")
