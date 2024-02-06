@@ -20,11 +20,11 @@ class ResistorNominalResistanceCalculator:
             if self.color_band5 is not None:
                 code5 = color_codes[self.color_band5]
                 multiplier = multipliers[self.color_band4]
-                nominal_resistance = (code1 * 100 + code2 * 10 + code3) * 10 ** multiplier
+                nominal_resistance = (code1 + code2 + code3) * multiplier
                 tolerance_value = code5
             else:
                 multiplier = multipliers[self.color_band3]
-                nominal_resistance = (code1 * 10 + code2) * 10 ** multiplier
+                nominal_resistance = (code1 + code2) * multiplier
                 tolerance_value = tolerance
             return nominal_resistance, tolerance_value
 
