@@ -68,6 +68,19 @@
       <option name="presentableId" value="Default" />
       <updated>1705627536706</updated>
     </task>
+    <task id="LOCAL-00001" summary="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;">
+      <option name="closed" value="true" />
+      <created>1707192970665</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707192970665</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;" />
   </component>
 </project>
