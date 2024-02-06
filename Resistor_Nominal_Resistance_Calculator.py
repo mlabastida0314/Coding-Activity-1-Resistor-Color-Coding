@@ -24,11 +24,11 @@ class ResistorNominalResistanceCalculator:
         if self.color_band5 is not None:
             code5 = tolerances[self.color_band5]
             multiplier = multipliers[self.color_band4]
-            nominal_resistance = (code1 + code2 + code3) * multiplier
+            nominal_resistance = int(f"{code1}{code2}{code3}") * multiplier
             tolerance_value = float(code5)/100
         else:
             multiplier = multipliers[self.color_band3]
-            nominal_resistance = (code1 + code2) * multiplier
+            nominal_resistance = int(f"{code1}{code2}") * multiplier
             tolerance_value = float(tolerance) / 100
 
         return nominal_resistance, tolerance_value

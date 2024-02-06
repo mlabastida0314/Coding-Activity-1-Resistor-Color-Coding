@@ -1,5 +1,4 @@
 # main.py
-from Resistor_Color_Codes import color_codes, multipliers, tolerances
 from Resistor_Nominal_Resistance_Calculator import ResistorNominalResistanceCalculator
 from Resistor_Limit_Value_Calculator import ResistorLimitValueCalculator
 
