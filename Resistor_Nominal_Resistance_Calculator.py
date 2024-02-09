@@ -15,12 +15,6 @@ class ResistorNominalResistanceCalculator:
         code2 = color_codes[self.color_band2]
         code3 = color_codes[self.color_band3]
 
-        if self.color_band4 in tolerances:
-            tolerance = tolerances[self.color_band4]
-        else:
-            print(f'Invalid tolerance color band: {self.color_band4}')
-            return None
-
         if self.color_band5 is not None:
             code5 = tolerances[self.color_band5]
             multiplier = multipliers[self.color_band4]
@@ -29,6 +23,15 @@ class ResistorNominalResistanceCalculator:
         else:
             multiplier = multipliers[self.color_band3]
             nominal_resistance = int(f"{code1}{code2}") * multiplier
+            tolerance = tolerances[self.color_band4]
             tolerance_value = float(tolerance) / 100
 
         return nominal_resistance, tolerance_value
+
+'''
+        if self.color_band4 in tolerances:
+            tolerance = tolerances[self.color_band4]
+        else:
+            print(f'Invalid tolerance color band: {self.color_band4}')
+            return None
+'''
