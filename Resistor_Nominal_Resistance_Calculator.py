@@ -1,6 +1,7 @@
 # nominal .py
 from Resistor_Color_Codes import color_codes, multipliers, tolerances
 
+
 class ResistorNominalResistanceCalculator:
     def __init__(self, color_band1, color_band2, color_band3, color_band4, color_band5=None):
         self.color_band1 = color_band1
@@ -17,13 +18,14 @@ class ResistorNominalResistanceCalculator:
         if self.color_band4 in tolerances:
             tolerance = tolerances[self.color_band4]
         else:
-            raise ValueError(f"Invalid tolerance color band: {self.color_band4}")
+            print(f'Invalid tolerance color band: {self.color_band4}')
+            return None
 
         if self.color_band5 is not None:
             code5 = tolerances[self.color_band5]
             multiplier = multipliers[self.color_band4]
             nominal_resistance = int(f"{code1}{code2}{code3}") * multiplier
-            tolerance_value = float(code5)/100
+            tolerance_value = float(code5) / 100
         else:
             multiplier = multipliers[self.color_band3]
             nominal_resistance = int(f"{code1}{code2}") * multiplier
