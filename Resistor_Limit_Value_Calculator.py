@@ -8,7 +8,7 @@ class ResistorLimitValueCalculator:
     def calculate_limits(self, color_band1, color_band2, color_band3, color_band4, color_band5=None):
         calculator_instance = ResistorNominalResistanceCalculator(color_band1, color_band2, color_band3, color_band4, color_band5)
 
-        try:
+        try: 
             result = calculator_instance.calculate_nominal_resistance()
             if result is not None:
                 nominal_resistance, tolerance_value = result
@@ -19,7 +19,9 @@ class ResistorLimitValueCalculator:
             else:
                 print("Error in limit.py")
                 return None
-
+                
         except KeyError as e:
             print(f"Error: Invalid color code entered - {e}")
             return None
+
+
