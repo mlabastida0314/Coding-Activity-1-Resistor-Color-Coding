@@ -1,8 +1,6 @@
 # nominal .py
 from Resistor_Color_Codes import color_codes, multipliers, tolerances
 
-
-
 class ResistorNominalResistanceCalculator:
     def __init__(self, color_band1, color_band2, color_band3, color_band4, color_band5=None):
         self.color_band1 = color_band1

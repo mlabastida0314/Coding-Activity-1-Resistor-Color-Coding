@@ -51,8 +51,8 @@ while True:
         else:
             print("Invalid number of bands.")
 
-    except ValueError as e:
-        print(e)
+    except KeyError:
+        print("Error input")
 
     end = input("Do you want to continue? (yes or no): ").lower()
     if end != 'yes':

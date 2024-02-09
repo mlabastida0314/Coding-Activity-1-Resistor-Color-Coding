@@ -1,7 +1,6 @@
 # resistor limit.py
 from Resistor_Nominal_Resistance_Calculator import ResistorNominalResistanceCalculator
 
-
 class ResistorLimitValueCalculator:
     def __init__(self):
         pass
