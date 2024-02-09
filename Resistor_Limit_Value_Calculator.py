@@ -18,10 +18,10 @@ class ResistorLimitValueCalculator:
                 return min_limit_value, max_limit_value
             else:
                 print("Error in limit.py")
-                return None
+                return None, None
                 
         except KeyError as e:
             print(f"Error: Invalid color code entered - {e}")
-            return None
+            return None, None
 
 
