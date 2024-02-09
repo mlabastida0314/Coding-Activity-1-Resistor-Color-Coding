@@ -52,8 +52,8 @@ while True:
         else:
             print("Invalid number of bands.")
 
-    except KeyError as e:
-        print(f"Error: Invalid color code entered - {e}")
+    except ValueError as e:
+        print(e)
 
     end = input("Do you want to continue? (yes or no): ").lower()
     if end != 'yes':
