@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="65792429-ae6f-4c61-856b-2e3965e4464b" name="Changes" comment="git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resistor_Color_Codes.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resistor_Color_Codes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Resistor_Limit_Value_Calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resistor_Limit_Value_Calculator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707534556798</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="git">
+      <option name="closed" value="true" />
+      <created>1707535238524</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707535238524</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
