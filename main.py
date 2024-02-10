@@ -2,33 +2,34 @@
 from Resistor_Color_Codes import color_codes, multipliers, tolerances
 from Resistor_Nominal_Resistance_Calculator import ResistorNominalResistanceCalculator
 from Resistor_Limit_Value_Calculator import ResistorLimitValueCalculator
-# start
+
 while True:
-    # Error handling using try-except
     try:
-        # user input
         print("Nominal Resistance Color Coding Calculator")
-        band = int(input("How many bands does the resistor have? (4 or 5 bands): "))
+        bands_input = (input("How many bands does the resistor have? (4 or 5 bands): "))
+        band = int(bands_input)
 
         if band == 4:
-            # user input for 4 bands
             print('4 Band Resistor')
             color_band1 = input("Enter the first color band: ").lower()
             color_band2 = input("Enter the second color band: ").lower()
             color_band3 = input("Enter the multiplier color band: ").lower()
             color_band4 = input("Enter the tolerance color band: ").lower()
-            # Calculation
+
+            if color_band1 not in color_codes or color_band2 not in color_codes or \
+                    color_band3 not in multipliers or color_band4 not in tolerances:
+                raise KeyError("Invalid color band/s entered.")
+
             resistor_calculator = ResistorNominalResistanceCalculator(color_band1, color_band2, color_band3, color_band4)
             result = resistor_calculator.calculate_nominal_resistance()
             if result is not None:
                 nominal_resistance, tolerance_value = result
-                # prints the calculation
                 print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
             else:
                 print("Error: In calculating the nominal resistance.")
 
             limit_value_calculator = ResistorLimitValueCalculator()
-            result = limit_value_calculator.calculate_limits(color_band1, color_band2, color_band3, color_band4) # method call
+            result = limit_value_calculator.calculate_limits(color_band1, color_band2, color_band3, color_band4)
             min_limit_values, max_limit_values = result
             print("Limit Values, Minimum and Maximum: {} Ω - {} Ω".format(min_limit_values, max_limit_values))
 
@@ -40,26 +41,32 @@ while True:
             color_band4 = input("Enter the multiplier color band: ").lower()
             color_band5 = input("Enter the tolerance color band: ").lower()
 
-            # calculation
+            if color_band1 not in color_codes or color_band2 not in color_codes or color_band3 not in color_codes or \
+                    color_band4 not in multipliers or color_band5 not in tolerances:
+                raise KeyError("Invalid color band/s entered.")
+
             resistor_calculator = ResistorNominalResistanceCalculator(color_band1, color_band2, color_band3, color_band4, color_band5)
-            result = resistor_calculator.calculate_nominal_resistance()  # method call
+            result = resistor_calculator.calculate_nominal_resistance()
             if result is not None:
                 nominal_resistance, tolerance_value = result
                 print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
             else:
                 print("Error: In calculating the nominal resistance.")
 
-            limit_value_calculator = ResistorLimitValueCalculator()    # function call
+            limit_value_calculator = ResistorLimitValueCalculator()
             result = limit_value_calculator.calculate_limits(color_band1, color_band2, color_band3, color_band4, color_band5)
             min_limit_values, max_limit_values = result
             print("Limit Values, Minimum and Maximum: {} Ω - {} Ω".format(min_limit_values, max_limit_values))
 
         else:
-            print("Invalid number of bands.")
+            print("Error: Invalid number of bands.")
+
+    except ValueError:
+        print("Error: Please enter a valid integer (4 or 5) for the number of bands.")
 
     except KeyError as e:
-        print(f"Error: Invalid color code entered - {e}")
-# the end of infinity loop (while) depends here
+        print(f"Error: {e}. Please enter valid color bands.")
+
     end = input("Do you want to continue? (yes or no): ").lower()
     if end != 'yes':
         print("This is the end of the code. Thank you.")
