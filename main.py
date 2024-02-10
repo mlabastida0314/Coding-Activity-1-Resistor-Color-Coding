@@ -22,11 +22,8 @@ while True:
 
             resistor_calculator = ResistorNominalResistanceCalculator(color_band1, color_band2, color_band3, color_band4)
             result = resistor_calculator.calculate_nominal_resistance()
-            if result is not None:
-                nominal_resistance, tolerance_value = result
-                print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
-            else:
-                print("Error: In calculating the nominal resistance.")
+            nominal_resistance, tolerance_value = result
+            print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
 
             limit_value_calculator = ResistorLimitValueCalculator()
             result = limit_value_calculator.calculate_limits(color_band1, color_band2, color_band3, color_band4)
@@ -47,11 +44,9 @@ while True:
 
             resistor_calculator = ResistorNominalResistanceCalculator(color_band1, color_band2, color_band3, color_band4, color_band5)
             result = resistor_calculator.calculate_nominal_resistance()
-            if result is not None:
-                nominal_resistance, tolerance_value = result
-                print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
-            else:
-                print("Error: In calculating the nominal resistance.")
+
+            nominal_resistance, tolerance_value = result
+            print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
 
             limit_value_calculator = ResistorLimitValueCalculator()
             result = limit_value_calculator.calculate_limits(color_band1, color_band2, color_band3, color_band4, color_band5)
