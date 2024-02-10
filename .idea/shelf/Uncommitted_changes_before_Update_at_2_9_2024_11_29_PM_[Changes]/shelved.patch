@@ -1,0 +1,149 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"65792429-ae6f-4c61-856b-2e3965e4464b\" name=\"Changes\" comment=\"git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/Coding-Activity-1-Resistor-Color-Coding.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/Coding-Activity-1-Resistor-Color-Coding.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Resistor_Limit_Value_Calculator.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Resistor_Limit_Value_Calculator.py\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Resistor_Nominal_Resistance_Calculator.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Resistor_Nominal_Resistance_Calculator.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;aavelasco41&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"9200f7d9-0cef-4915-873f-09635e773294\" />\r\n        <option name=\"url\" value=\"https://github.com/mlabastida0314/Coding-Activity-1-Resistor-Color-Coding.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 4\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2b9VyZz52l8byJzgt1hNZ9FDjun\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"D:/MyWorkspace/pythonProject/colorcode\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"65792429-ae6f-4c61-856b-2e3965e4464b\" name=\"Changes\" comment=\"\" />\r\n      <created>1705627536706</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1705627536706</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707192970665</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707192970665</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707200125356</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707200125356</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707210352616</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707210352617</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"4\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f3c7e7163ac8f92f8f5947392b3d49b0cb47efcc)
++++ b/.idea/workspace.xml	(date 1707489930000)
+@@ -5,9 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="65792429-ae6f-4c61-856b-2e3965e4464b" name="Changes" comment="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;">
+-      <change beforePath="$PROJECT_DIR$/.idea/Coding-Activity-1-Resistor-Color-Coding.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Coding-Activity-1-Resistor-Color-Coding.iml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Resistor_Limit_Value_Calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resistor_Limit_Value_Calculator.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Resistor_Nominal_Resistance_Calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Resistor_Nominal_Resistance_Calculator.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -23,14 +21,33 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="PUSH_TAGS">
++      <GitPushTagMode>
++        <option name="argument" value="--tags" />
++        <option name="title" value="All" />
++      </GitPushTagMode>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+-  <component name="GitHubPullRequestSearchHistory">{
+-  &quot;lastFilter&quot;: {
+-    &quot;state&quot;: &quot;OPEN&quot;,
+-    &quot;assignee&quot;: &quot;aavelasco41&quot;
++  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
++  "history": [
++    {
++      "state": "OPEN",
++      "assignee": "aavelasco41",
++      "author": "mlabastida0314"
++    },
++    {
++      "state": "MERGED",
++      "assignee": "aavelasco41",
++      "author": "mlabastida0314"
++    }
++  ],
++  "lastFilter": {
++    "state": "MERGED",
++    "assignee": "aavelasco41",
++    "author": "mlabastida0314"
+   }
+-}</component>
++}]]></component>
+   <component name="GithubPullRequestsUISettings">
+     <option name="selectedUrlAndAccountId">
+       <UrlAndAccount>
+@@ -42,6 +59,9 @@
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
++  <component name="ProblemsViewState">
++    <option name="selectedTabId" value="ProjectErrors" />
++  </component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 4
+ }</component>
+@@ -55,7 +75,9 @@
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "git-widget-placeholder": "master",
+-    "last_opened_file_path": "D:/MyWorkspace/pythonProject/colorcode"
++    "last_opened_file_path": "D:/MyWorkspace/pythonProject/colorcode",
++    "run.code.analysis.last.selected.profile": "aDefault",
++    "settings.editor.selected.configurable": "preferences.lookFeel"
+   }
+ }]]></component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+@@ -91,8 +113,27 @@
+       <option name="project" value="LOCAL" />
+       <updated>1707210352617</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;">
++      <option name="closed" value="true" />
++      <created>1707488006692</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1707488006692</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;" />
+Index: Resistor_Nominal_Resistance_Calculator.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># nominal .py\r\nfrom Resistor_Color_Codes import color_codes, multipliers, tolerances\r\n\r\nclass ResistorNominalResistanceCalculator:\r\n    def __init__(self, color_band1, color_band2, color_band3, color_band4, color_band5=None):\r\n        self.color_band1 = color_band1\r\n        self.color_band2 = color_band2\r\n        self.color_band3 = color_band3\r\n        self.color_band4 = color_band4\r\n        self.color_band5 = color_band5 if color_band5 else None\r\n\r\n    def calculate_nominal_resistance(self):\r\n        code1 = color_codes[self.color_band1]\r\n        code2 = color_codes[self.color_band2]\r\n        code3 = color_codes[self.color_band3]\r\n\r\n        if self.color_band4 in tolerances:\r\n            tolerance = tolerances[self.color_band4]\r\n        else:\r\n            raise ValueError(f\"Invalid tolerance color band: {self.color_band4}\")\r\n\r\n        if self.color_band5 is not None:\r\n            code5 = tolerances[self.color_band5]\r\n            multiplier = multipliers[self.color_band4]\r\n            nominal_resistance = int(f\"{code1}{code2}{code3}\") * multiplier\r\n            tolerance_value = float(code5)/100\r\n        else:\r\n            multiplier = multipliers[self.color_band3]\r\n            nominal_resistance = int(f\"{code1}{code2}\") * multiplier\r\n            tolerance_value = float(tolerance) / 100\r\n\r\n        return nominal_resistance, tolerance_value
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Resistor_Nominal_Resistance_Calculator.py b/Resistor_Nominal_Resistance_Calculator.py
+--- a/Resistor_Nominal_Resistance_Calculator.py	(revision f3c7e7163ac8f92f8f5947392b3d49b0cb47efcc)
++++ b/Resistor_Nominal_Resistance_Calculator.py	(date 1707492350000)
+@@ -1,6 +1,7 @@
+ # nominal .py
+ from Resistor_Color_Codes import color_codes, multipliers, tolerances
+ 
++
+ class ResistorNominalResistanceCalculator:
+     def __init__(self, color_band1, color_band2, color_band3, color_band4, color_band5=None):
+         self.color_band1 = color_band1
+@@ -17,16 +18,17 @@
+         if self.color_band4 in tolerances:
+             tolerance = tolerances[self.color_band4]
+         else:
+-            raise ValueError(f"Invalid tolerance color band: {self.color_band4}")
++            print(f'Invalid tolerance color band: {self.color_band4}')
++            return None
+ 
+         if self.color_band5 is not None:
+             code5 = tolerances[self.color_band5]
+             multiplier = multipliers[self.color_band4]
+             nominal_resistance = int(f"{code1}{code2}{code3}") * multiplier
+-            tolerance_value = float(code5)/100
++            tolerance_value = float(code5) / 100
+         else:
+             multiplier = multipliers[self.color_band3]
+             nominal_resistance = int(f"{code1}{code2}") * multiplier
+             tolerance_value = float(tolerance) / 100
+ 
+-        return nominal_resistance, tolerance_value
+\ No newline at end of file
++        return nominal_resistance, tolerance_value

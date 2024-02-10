@@ -1,0 +1,127 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># main.py\r\n#This Python code is a script that utilizes the NominalResistorCalculator class from the Nominal_Resistance_Calculator module.\r\n#The script allows the user to input the color bands of a resistor and then calculates and prints the corresponding nominal resistance and tolerance.\r\n\r\nfrom Nominal_Resistance_Calculator import NominalResistorCalculator\r\n#This line imports the NominalResistorCalculator class from the Nominal_Resistance_Calculator .py file.\r\n#The assumption here is that the calculator class is defined in a .py file named Nominal_Resistance_Calculator\r\n\r\ndef main(): #This function serves as the main entry point for the code.\r\n    print(\"Nominal Resistance Color Coding Calculator\")\r\n\r\n    color_band1 = input(\"Enter the first color: \").lower()\r\n    color_band2 = input(\"Enter the second color: \").lower()\r\n    #The script prompts the user to enter the colors of the resistor bands.\r\n    # The .lower() method is used to convert the input to lowercase, ensuring case-insensitivity.\r\n    multiplier_band3 = input(\"Enter the multiplier color: \").lower()\r\n    tolerance_band4 = input(\"Enter the tolerance color: \").lower()\r\n\r\n    calculator = NominalResistorCalculator(color_band1, color_band2, multiplier_band3, tolerance_band4)\r\n    #An instance of the NominalResistorCalculator class is created with the provided color band inputs.\r\n    nominal_resistance, tolerance_value = calculator.calculate_nominal_resistance()\r\n    #The calculate_nominal_resistance() method is called on the calculator object, and the resulting nominal resistance and tolerance values are assigned to variables.\r\n\r\n    print(\"Nominal Resistance and Tolerance: {} Ω ± {}%\".format(nominal_resistance, tolerance_value))\r\n    #The script then prints the calculated nominal resistance and tolerance values in a formatted string.\r\n\r\nif __name__ == \"__main__\":\r\n    main()\r\n    #The script checks if it is being run directly (not imported as a .py file).\r\n    #If so, it calls the main() function, initiating the execution of the script.\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	
++++ b/main.py	
+@@ -1,7 +1,7 @@
+-# main.py
++#main.py
+ #This Python code is a script that utilizes the NominalResistorCalculator class from the Nominal_Resistance_Calculator module.
+ #The script allows the user to input the color bands of a resistor and then calculates and prints the corresponding nominal resistance and tolerance.
+-
++'''
+ from Nominal_Resistance_Calculator import NominalResistorCalculator
+ #This line imports the NominalResistorCalculator class from the Nominal_Resistance_Calculator .py file.
+ #The assumption here is that the calculator class is defined in a .py file named Nominal_Resistance_Calculator
+@@ -18,7 +18,7 @@
+ 
+     calculator = NominalResistorCalculator(color_band1, color_band2, multiplier_band3, tolerance_band4)
+     #An instance of the NominalResistorCalculator class is created with the provided color band inputs.
+-    nominal_resistance, tolerance_value = calculator.calculate_nominal_resistance()
++    nominal_resistance, tolerance_value = calculator.calculate_nominal_resistance
+     #The calculate_nominal_resistance() method is called on the calculator object, and the resulting nominal resistance and tolerance values are assigned to variables.
+ 
+     print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
+@@ -28,3 +28,4 @@
+     main()
+     #The script checks if it is being run directly (not imported as a .py file).
+     #If so, it calls the main() function, initiating the execution of the script.
++'''
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"65792429-ae6f-4c61-856b-2e3965e4464b\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 4\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2b9VyZz52l8byJzgt1hNZ9FDjun\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"git-widget-placeholder\": \"master\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"65792429-ae6f-4c61-856b-2e3965e4464b\" name=\"Changes\" comment=\"\" />\r\n      <created>1705627536706</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1705627536706</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -4,7 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="65792429-ae6f-4c61-856b-2e3965e4464b" name="Changes" comment="" />
++    <list default="true" id="65792429-ae6f-4c61-856b-2e3965e4464b" name="Changes" comment="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -23,21 +26,28 @@
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 4
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 4
++}</component>
+   <component name="ProjectId" id="2b9VyZz52l8byJzgt1hNZ9FDjun" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "git-widget-placeholder": "master"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;last_opened_file_path&quot;: &quot;D:/MyWorkspace/ACT 1/Coding-Activity-1-Resistor-Color-Coding&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+   }
+-}]]></component>
++}</component>
++  <component name="RecentsManager">
++    <key name="CopyFile.RECENT_KEYS">
++      <recent name="D:\MyWorkspace\ACT 1\Coding-Activity-1-Resistor-Color-Coding" />
++    </key>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -47,6 +57,30 @@
+       <option name="presentableId" value="Default" />
+       <updated>1705627536706</updated>
+     </task>
++    <task id="LOCAL-00001" summary="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;">
++      <option name="closed" value="true" />
++      <created>1706716767619</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1706716767619</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;" />
++    <option name="LAST_COMMIT_MESSAGE" value="git add Nominal_Resistance_Calculator.py&#10;git commit -m &quot;Add Nominal_Resistance_Calculator.py: Changes&quot;" />
++  </component>
+ </project>
+\ No newline at end of file
