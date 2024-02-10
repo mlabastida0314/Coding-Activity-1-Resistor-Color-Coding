@@ -22,4 +22,3 @@ class ResistorLimitValueCalculator:
             print(f"Error: Invalid color entered. - {e}")
             return None, None
 
-
