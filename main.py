@@ -5,8 +5,8 @@ from Resistor_Limit_Value_Calculator import ResistorLimitValueCalculator
 
 while True:
     try:
-        print("Nominal Resistance Color Coding Calculator")
-        bands_input = (input("How many bands does the resistor have? (4 or 5 bands): "))
+        print("Nominal Resistance and Limit Value Color Coding Calculator")
+        bands_input = input("How many bands does the resistor have? (4 or 5 bands): ")
         band = int(bands_input)
 
         if band == 4:
@@ -22,6 +22,7 @@ while True:
 
             resistor_calculator = ResistorNominalResistanceCalculator(color_band1, color_band2, color_band3, color_band4)
             result = resistor_calculator.calculate_nominal_resistance()
+
             nominal_resistance, tolerance_value = result
             print("Nominal Resistance and Tolerance: {} Ω ± {}%".format(nominal_resistance, tolerance_value))
 
@@ -54,7 +55,7 @@ while True:
             print("Limit Values, Minimum and Maximum: {} Ω - {} Ω".format(min_limit_values, max_limit_values))
 
         else:
-            print("Error: Invalid number of bands.")
+            print("Error: Invalid input of bands.")
 
     except ValueError:
         print("Error: Please enter a valid integer (4 or 5) for the number of bands.")
@@ -66,3 +67,18 @@ while True:
     if end != 'yes':
         print("This is the end of the code. Thank you.")
         break
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
