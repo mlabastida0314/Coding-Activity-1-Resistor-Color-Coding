@@ -58,7 +58,7 @@ while True:
 
     except KeyError:
         print("Error input")
-
+    # the end of infinity loop (while) depends on here
     end = input("Do you want to continue? (yes or no): ").lower()
     if end != 'yes':
         print("This is the end of the code. Thank you.")
