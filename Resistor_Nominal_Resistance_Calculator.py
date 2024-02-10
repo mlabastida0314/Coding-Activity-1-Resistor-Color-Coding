@@ -16,15 +16,14 @@ class ResistorNominalResistanceCalculator:
         code2 = color_codes[self.color_band2]
         code3 = color_codes[self.color_band3]
 
-        #conditional statement
-        if self.color_band5 is not None: #if resistor has 5 bands
+        if self.color_band5 is not None:
             code5 = tolerances[self.color_band5]
             multiplier = multipliers[self.color_band4]
-            nominal_resistance = int(f"({code1}{code2}{code3}") * multiplier
-            tolerance_value = float(code5)/100
-        else: #otherwise, if resistor has 4 bands
+            nominal_resistance = int(f"{code1}{code2}{code3}") * multiplier  # Added closing parenthesis
+            tolerance_value = float(code5) / 100
+        else:
             multiplier = multipliers[self.color_band3]
-            nominal_resistance = (code1 + code2) * multiplier
+            nominal_resistance = int(f"{code1}{code2}") * multiplier  # Added closing parenthesis
             tolerance = tolerances[self.color_band4]
             tolerance_value = float(tolerance) / 100
 
